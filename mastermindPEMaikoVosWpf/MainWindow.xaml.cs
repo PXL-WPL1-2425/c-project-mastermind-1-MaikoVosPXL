@@ -34,6 +34,7 @@ namespace mastermindPEMaikoVosWpf
             randomColorTwo = PickingRandomColor(rnd.Next(0, 6));
             randomColorThree = PickingRandomColor(rnd.Next(0, 6));
             randomColorFour = PickingRandomColor(rnd.Next(0, 6));
+
             this.Title = $"MasterMind: {randomColorOne}, {randomColorTwo}, {randomColorThree}, {randomColorFour}";
         }
 

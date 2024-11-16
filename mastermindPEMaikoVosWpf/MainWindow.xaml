@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mastermindPEMaikoVosWpf"
         mc:Ignorable="d"
-        Title="Mastermind" Height="450" Width="800">
+        Title="Mastermind" Height="450" Width="800" Loaded="MainWindowLoader">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

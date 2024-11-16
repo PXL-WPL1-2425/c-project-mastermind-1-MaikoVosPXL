@@ -58,5 +58,68 @@ namespace mastermindPEMaikoVosWpf
                     return "Black";
             }
         }
+
+        private void ColorChange(object sender, EventArgs e)
+        {
+            ComboBox changedComboBox = sender as ComboBox;
+
+            if (changedComboBox == colorOneComboBox)
+            {
+                colorFieldOne.Background = Colorindex(changedComboBox.SelectedIndex);
+            }
+            else if (changedComboBox == colorTwoComboBox)
+            {
+                colorFieldTwo.Background = Colorindex(changedComboBox.SelectedIndex);
+            }
+            else if (changedComboBox == colorThreeComboBox)
+            {
+                colorFieldThree.Background = Colorindex(changedComboBox.SelectedIndex);
+            }
+            else if (changedComboBox == colorFourComboBox)
+            {
+                colorFieldFour.Background = Colorindex(changedComboBox.SelectedIndex);
+            }
+        }
+
+        private Brush Colorindex(int selectedindex)
+        {
+            switch (selectedindex)
+            {
+                case 0:
+                    return Brushes.Red;
+                case 1:
+                    return Brushes.Yellow;
+                case 2:
+                    return Brushes.Orange;
+                case 3:
+                    return Brushes.White;
+                case 4:
+                    return Brushes.Green;
+                case 5:
+                    return Brushes.Blue;
+                default:
+                    return Brushes.Black;
+            }
+        }
+
+        private void colorOneComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ColorChange(sender, e);
+        }
+
+        private void colorTwoComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ColorChange(sender, e);
+        }
+
+        private void colorThreeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ColorChange(sender, e);
+        }
+
+        private void colorFourComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ColorChange(sender, e);
+        }
     }
 }

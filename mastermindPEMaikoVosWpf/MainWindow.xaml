@@ -20,7 +20,7 @@
             <RowDefinition Height="30px"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="colorOneComboBox" Grid.Row="0" Grid.Column="0" FontSize="14">
+        <ComboBox x:Name="colorOneComboBox" Grid.Row="0" Grid.Column="0" FontSize="14" SelectionChanged="colorOneComboBox_SelectionChanged">
             <ComboBoxItem Content="Red" Background="Red"/>
             <ComboBoxItem Content="Yellow" Background="Yellow"/>
             <ComboBoxItem Content="Orange" Background="Orange"/>
@@ -28,7 +28,7 @@
             <ComboBoxItem Content="Green" Background="Green"/>
             <ComboBoxItem Content="Blue" Background="Blue"/>
         </ComboBox>
-        <ComboBox x:Name="colorTwoComboBox" Grid.Row="0" Grid.Column="1" FontSize="14">
+        <ComboBox x:Name="colorTwoComboBox" Grid.Row="0" Grid.Column="1" FontSize="14" SelectionChanged="colorTwoComboBox_SelectionChanged">
             <ComboBoxItem Content="Red" Background="Red"/>
             <ComboBoxItem Content="Yellow" Background="Yellow"/>
             <ComboBoxItem Content="Orange" Background="Orange"/>
@@ -36,7 +36,7 @@
             <ComboBoxItem Content="Green" Background="Green"/>
             <ComboBoxItem Content="Blue" Background="Blue"/>
         </ComboBox>
-        <ComboBox x:Name="colorThreeComboBox" Grid.Row="0" Grid.Column="2" FontSize="14">
+        <ComboBox x:Name="colorThreeComboBox" Grid.Row="0" Grid.Column="2" FontSize="14" SelectionChanged="colorThreeComboBox_SelectionChanged">
             <ComboBoxItem Content="Red" Background="Red"/>
             <ComboBoxItem Content="Yellow" Background="Yellow"/>
             <ComboBoxItem Content="Orange" Background="Orange"/>
@@ -44,7 +44,7 @@
             <ComboBoxItem Content="Green" Background="Green"/>
             <ComboBoxItem Content="Blue" Background="Blue"/>
         </ComboBox>
-        <ComboBox x:Name="colorFourComboBox" Grid.Row="0" Grid.Column="3" FontSize="14">
+        <ComboBox x:Name="colorFourComboBox" Grid.Row="0" Grid.Column="3" FontSize="14" SelectionChanged="colorFourComboBox_SelectionChanged">
             <ComboBoxItem Content="Red" Background="Red"/>
             <ComboBoxItem Content="Yellow" Background="Yellow"/>
             <ComboBoxItem Content="Orange" Background="Orange"/>
